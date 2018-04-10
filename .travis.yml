@@ -1,0 +1,20 @@
+language: node_js
+node_js:
+  - "9"
+dist: trusty
+services:
+  - mongodb
+  - redis-server
+env:
+  - NODE_ENV=ci PORT=3000
+cache:
+  directories:
+    - advanced-node-skeleton/node_modules
+    - advanced-node-skeleton/client/node_modules
+install:
+  - npm install --prefix advanced-node-skeleton
+  - npm run build --prefix advanced-node-skeleton
+script:
+  - nohup npm run start --prefix advanced-node-skeleton &
+  - sleep 3
+  - npm run test --prefix advanced-node-skeleton
