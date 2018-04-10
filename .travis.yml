@@ -18,3 +18,7 @@ script:
   - nohup npm run start --prefix advanced-node-skeleton &
   - sleep 3
   - npm run test --prefix advanced-node-skeleton
+sudo: required
+addons:
+  chrome: stable
+  
