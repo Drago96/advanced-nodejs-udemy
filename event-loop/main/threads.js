@@ -1,4 +1,4 @@
-process.env.UV_THREADPOOL_SIZE = 2;
+// "set UV_THREADPOOL_SIZE=10 && node threads.js"
 
 const crypto = require("crypto");
 
