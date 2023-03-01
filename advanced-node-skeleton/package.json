@@ -27,7 +27,7 @@
     "migrate-mongoose": "^3.2.2",
     "mongoose": "^4.11.1",
     "nodemon": "^1.11.0",
-    "npm": "^5.8.0",
+    "npm": "^9.5.1",
     "passport": "^0.3.2",
     "passport-google-oauth20": "^1.0.0",
     "path-parser": "^2.0.2",
